@@ -1,0 +1,20 @@
+# 배포에는 정리기 화면 · rules/ · data/ 만 올린다 (쓰는 사람에게 필요한 것만)
+# .gitignore 와 따로 둔다 — vercel 로 이 폴더에서 바로 배포하면 .gitignore 는 읽지 않는다
+
+# 어디에도 올리지 않는다
+tools/
+정리본/
+진단/
+.claude/
+
+# 저장소에는 있지만 배포에는 필요 없다
+정리/
+README.md
+*.py
+
+# 그 밖의 csv · xlsx 는 올리지 않는다. data/ 의 예시 파일만 예외
+*.csv
+*.xlsx
+*.xls
+!data/*.csv
+!data/*.xlsx
